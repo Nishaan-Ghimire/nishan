@@ -1,0 +1,8 @@
+export { default as Resumes } from "./Resumes/Resumes"
+export { default as Services } from "./Services/Services"
+export { default as Skills } from "./Skills/Skills"
+export { default as Projects } from "./Projects/Projects"
+export { default as Blogs } from "./Blogs/Blogs"
+export { default as Testimonials } from "./Testimonials/Testimonials"
+export { default as Freelancing } from "./Freelancing/Freelancing"
+export { default as Contact } from "./Contact/Contact"
