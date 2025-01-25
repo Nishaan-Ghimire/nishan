@@ -5,7 +5,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { useEffect, useRef, useState } from 'react'
 import { Routes, Route, Navigate } from "react-router-dom";
 import { Navbar, NavigationDots, SocialLinks } from "./components"
-import { Home, About, Resume, Services, Skills, Projects, Blogs, Freelancing, Testimonials, Contact, Footer, Account, Register, Login } from "./pages"
+import { Home, About, Skills, Projects, Blogs,  Contact, Footer } from "./pages"
 import 'react-phone-number-input/style.css'
  
 const User = () => {
@@ -72,9 +72,9 @@ const User = () => {
             <Navbar navbarMenuRef={navbarMenuRef} showMenu={showMenu} setShowMenu={setShowMenu} />
             <div style={{minHeight:'calc(100vh - 4rem)'}} className="flex justify-center items-center " >
                 <Routes>
-                    <Route exact path='/auth/register' element={<Register />} />
-                    <Route exact path='/auth/login' element={<Login />} />
-                    <Route exact path='/account' element={<Account />} />
+                    {/* <Route exact path='/auth/register' element={<Register />} /> */}
+                    {/* <Route exact path='/auth/login' element={<Login />} /> */}
+                    {/* <Route exact path='/account' element={<Account />} /> */}
                     <Route path='/' element={<App />} />
                     <Route path='/*' element={<Navigate replace to='/' />} />
                 </Routes>
